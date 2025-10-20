@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+
+}
+body{
+    display:flex;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+  width: 20rem;
+  height:20rem;
+  padding:5em 2rem;
+  box-shadow: 0px 2px  20px black;
+  border:2px solid black;
+}
+h1{
+    padding:10px;
+    margin-bottom:3rem;
+}
+
+.username,.userpassword{
+    text-align: center;
+    border-radius: 20px;
+    margin:10px;
+    padding:10px;
+    border: 2px solid red;
+    width: 15rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all .2s ease-in-out;
+    color:white;
+    
+
+}
+.username:focus,
+.userpassword:focus {
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    outline:none;
+}
+
+@keyframes colorChange {
+
+    0% {
+        border-color: green;
+        color: green;
+    }
+
+    10% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+
+    20% {
+        border-color: hotpink;
+        color: hotpink;
+    }
+
+    30% {
+        border-color: red;
+        color: red;
+    }
+
+    40% {
+        border-color: purple;
+        color: purple;
+    }
+
+    50% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+
+    60% {
+        border-color: cyan;
+        color: cyan;
+    }
+
+    70% {
+        border-color: skyblue;
+        color: skyblue;
+    }
+
+    80% {
+        border-color: pink;
+        color: pink;
+    }
+
+    90% {
+        border-color: red;
+        color: red;
+    }
+
+    100% {
+        border-color: yellow;
+        color: yellow;
+    }
+}
+.loginbtn{
+    background: transparent;
+    border:2px solid green;
+    padding: 0.7rem 2.5rem ;
+    margin-top:1rem;
+    border-radius: 60px;
+    color:white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    text-decoration: underline;
+}
+.loginbtn:hover{
+    background:green;
+    border:2px solid green;
+}
